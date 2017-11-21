@@ -1047,6 +1047,7 @@
 		 * @returns {Tree}
 		 */
 		setNeighbors: function( node, level ) {
+			console.log(node.id, node.text, this.lastNodeOnLevel);
 			node.leftNeighborId = this.lastNodeOnLevel[level];
 			if ( node.leftNeighborId ) {
 				node.leftNeighbor().rightNeighborId = node.id;

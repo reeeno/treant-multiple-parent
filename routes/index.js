@@ -19,5 +19,11 @@ router.get('/contact', function(req, res){
   });
 });
 
+router.get('/tree', function(req, res){
+    res.render('tree', {
+        title: 'Tree'
+    });
+});
+
 module.exports = router;
 
